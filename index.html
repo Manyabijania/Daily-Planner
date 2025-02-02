@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Screen -->
+    <div id="home-screen" class="screen">
+        <h1 id="home-heading">DAILY PLANNER</h1>
+        <button id="go-to-calendar">Go to Calendar</button>
+        <button id="go-to-daily-schedule">Go to Daily Schedule</button>
+        <button id="go-to-notes">Go to Notes</button>
+    </div>
+    <div class="container">
+        <!-- Calendar Section -->
+        
+        <div class="calendar">
+            <button id="back-to-home-calendar">Back to Home</button>
+            <h2>📅 Calendar</h2>
+            <div class="calendar-controls">
+                <select id="month-select"></select>
+                <select id="year-select"></select>
+            </div>
+            <table id="calender-table">
+                <thead>
+                    <tr>
+                        <th>Sun</th> <th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thu</th> <th>Fri</th> <th>Sat</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="calendar-body">
+                    <!-- Calendar will be generated here -->
+                </tbody>
+                
+            </table>
+        </div>
+                <!-- Below your calendar body -->
+        <div id="note-display" style=" font-size: 18px;"></div>
+
+        <!-- Daily Schedule -->
+        <div class="daily-schedule">
+            <button id="back-to-home-schedule">Back to Home</button>
+            <h2>📝 Daily Schedule</h2>
+            <textarea class="schedule-textarea" placeholder="Enter your tasks for today..."></textarea>
+            <button id="save-schedule-button">Save</button>
+            <button id="clear-schedule-button">Clear</button>
+        </div>
+
+        <!-- Notes Section -->
+        <div class="notes">
+            <button id="back-to-home-schedule">Back to Home</button>
+            <h2>🗒️ Notes</h2>
+
+            <textarea class="schedule-textarea" placeholder="Write your notes here..."></textarea>
+            <button id="save-notes-button">Save</button>
+            <button id="clear-notes-button">Clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

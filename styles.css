@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0f7a5, #ff7eb3);
+    color: rgb(10, 2, 2);
+    text-align: center;
+    padding: 20px;
+    background-image: url("back22.jpg");
+    background-position: fixed;
+    background-size:cover;
+    margin: 0; 
+    min-height: 100%;
+    background-repeat: no-repeat;
+}
+#home-screen {
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh;
+    width: 100vw; 
+    background-size: 100% 100%;
+    text-align: center; /* Center text within the buttons */
+}
+
+#home-heading {
+    padding-top: 150px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-weight:1000;
+    font-size: 40px;
+}
+#home-screen button {
+    margin: 10px; /* Add space around the buttons */
+    padding: 10px 20px; /* Add padding to the buttons */
+    font-size: 16px; /* Set a reasonable font size */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    /* Example background color */
+    color: black; /* Example text color */
+    cursor: pointer; /* Make the cursor a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h2 {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calendar, .daily-schedule, .weekly-overview, .notes {
+    background: rgba(255, 255, 255, 0.2);
+    padding-top:150px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    min-height: 400px;
+}
+.schedule-textarea {
+    width: 100%; 
+    max-width: 90%; 
+    height: 150px; 
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.calendar-controls{
+    padding-bottom: 15px;
+}
+#month-select,#year-select{
+    background-color: #ffcdb2;
+    color: black;
+    border-style: double;
+    border-width: thick;
+    border-color: #dc6e71;
+    width:110px ;
+    height:50px;
+    text-align: center;
+    font-size: 15px;
+}
+#year-select{
+    width:80px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+td:hover {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    resize: none;
+}
+
+button {
+    background: #FFCDB2;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #eb9567;
+}
+.notes-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+}
+
+
